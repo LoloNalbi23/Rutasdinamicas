@@ -4,7 +4,7 @@ function Peliculas () {
     let pelis = useOutletContext()
     return (
         <>
-            {pelis.filter(p => <Link to="/peliculas/:id"></Link>)}
+            <Link to="/peliculas/:id"></Link>
         </>
     )
 }

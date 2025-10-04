@@ -40,7 +40,14 @@ descripcion: "Un grupo de exploradores viaja a través de un agujero de gusano e
 
   return (
     <>
-      <Link to="/peliculas/all"></Link>
+      <nav>
+        <h1>Bienvenido a su sitio de información de peliculas favorito</h1>
+        <ul>
+          <li>
+            <Link to="/peliculas/all">Ver todas las peliculas</Link>
+          </li>
+        </ul>
+      </nav>
       <Outlet context={peliculas}/>
     </>
   )
