@@ -1,20 +1,20 @@
 import { Link, useOutletContext } from "react-router-dom"
 
-function Peliculas () {
+function Favoritos () {
     let pelis = useOutletContext()
+
     return (
         <>
         <div id="pelis">
-            {pelis.map((p) => (
+            {(pelis.filter(v => v.fav == true)).map((p) => (
                 <div>
                     <Link to={`/peliculas/${p.id}`}>{p.titulo}</Link> 
                 </div>
         ))}
-        <Link to={`/peliculas/favs`}>Favoritos</Link>
         </div>
         
         </>
     )
 }
 
-export default Peliculas
+export default Favoritos
