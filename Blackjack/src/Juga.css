@@ -1,0 +1,77 @@
+.juego-container {
+  background-image: url("https://media.istockphoto.com/id/1407257859/es/vector/mesa-de-p%C3%B3ker-con-marco-de-madera-realista.jpg?s=612x612&w=0&k=20&c=vlH1FqpRrs3p5X5HQK-ElnR6hQlsx3aJfEzi3Tq9UP4=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  color: #f5d26c;
+}
+
+.mesa {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid #f5d26c;
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.jugador-section,
+.dealer-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cartas img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s ease;
+}
+
+.cartas img:hover {
+  transform: scale(1.05);
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.botones button {
+  background-color: #a40000;
+  color: #f5d26c;
+  border: 2px solid #f5d26c;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botones button:hover:not(:disabled) {
+  background-color: #d40000;
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #f5d26c;
+}
+
+.botones button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
